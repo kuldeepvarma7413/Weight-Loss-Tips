@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        function BMI()
+        {
+            var h=document.getElementById('h').value;
+            var w=document.getElementById('w').value;
+            var bmi=w/(h/100*h/100);
+            var bmio=(bmi.toFixed(2));
+
+            document.getElementById('result').innerHTML="Your BMI is "+bmio;
+        }
+    </script>
+
     <title>Weight Loss Tips - Diets & Plans</title>
     <script src="https://kit.fontawesome.com/b9f4239327.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,8 +23,8 @@
         <nav class="hfc">
             <ul>
                 <li><a href="#main">Home</a></li>
-                <li><a href="#footer">About Me</a></li>
-                <li><a href="#footer">Contact Me</a></li>
+                <li><a href="#footer">About Us</a></li>
+                <li><a href="#footer">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -31,14 +41,24 @@
         </nav>
     </header>
 
+
+
+<!--
+    
+-->
+
+
+
+
     <div id="main">
         <aside>
-            <h3>The greatest wealth is health.</h3>
+            <h3 id="home">The greatest wealth is health.</h3>
 
             <ul>
                 <li><a href="#why">Why loss weight</a></li>
                 <li><a href="#tips">Tips</a></li>
                 <li><a href="#7-days-plan">7 Days Plan</a></li>
+                <li><a href="#bmicalculator">BMI Calculator</a></li>
                 <li><a href="#exercises">Exercises</a></li>
             </ul>
 
@@ -328,6 +348,22 @@
                 </table>
             </div>
 
+            <h1 id="bmicalculator" class="welcome">BMI Calculator :</h1>
+                    <div>
+                        <div class="bmimain service-box">
+                            <h2 class="bmih2">BMI Calculator</h2>
+                            <p class="text">Height (cm)</p>
+                            <input type="text" id="h">
+                            <p class="text">Weight (kg)</p>
+                            <input type="text" id="w"> <br>
+                            <p id="result"></p>
+                            <button id="btn" onclick="BMI()">Calculate</button> <br>
+                            <p id="info">Please enter height [cm] and weight [kg]</p>
+                        </div>
+                    </div>
+
+           
+
             <h1 id="exercises" class="welcome">Exercises :</h1>
             <h2>Here is a second way also to loss weight.</h2>
 
@@ -351,6 +387,8 @@
                         </p>
                     </div>
                 </div>
+
+                
     
                 <div class="service-box">
                     <div class="service-img">
@@ -447,7 +485,7 @@
         </nav>
 
         <div class="hfc copyright" >
-            <h3>CONTACT ME</h3>
+            <h3>CONTACT US</h3>
             <ul>
                 <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100078020876803"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/kuldeepvarma7413/"><i class="fa-brands fa-instagram"></i></a></li>

@@ -124,6 +124,83 @@ aside ul li a:hover{
     border: 2px solid grey;
 }
 
+/*BMI*/
+
+.bmi{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bmimain{
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #ee5253;
+}
+
+.bmih2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+    margin-left: 10%;
+}
+
+#w, #h{
+    color: #222f3e;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin: 0px auto;
+    background: none;
+    border-bottom: 1px solid #341f97;
+    width: 80%;
+}
+
+#w:focus, #h:focus{
+    border-bottom: 2px solid #341f97;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#result{
+    color: #341f97;
+    text-align: center;
+}
+
+#btn{
+    font-family: inherit;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+    width: 150px;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 30px;
+    outline: 0px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    box-shadow: 1px 1px 1px #341f97;
+}
+
+#info{
+    font-size: 12px;
+    font-family: inherit;
+}
+
 #main{
     display: flex;
     margin-top: 90px;
@@ -218,7 +295,7 @@ img{
 }
 
 img:hover{
-    box-shadow: 2px 2px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 3px 5px #9dbd73;
 }
 /*responsive*/
 @media screen and (max-width:850px){
@@ -228,6 +305,10 @@ img:hover{
 
     .service-box{
         flex-basis: 48%;
+    }
+
+    .bmimain{
+        width: 60%;
     }
 }
 
@@ -248,9 +329,6 @@ img:hover{
     header{
         position: unset;
     }
-    aside{
-        order: -1;
-    }
 
     .service-container{
         flex-direction: column;
@@ -265,5 +343,9 @@ img:hover{
     }
     .welcome{
         text-align: center;
+    }
+
+    .bmimain{
+        width: 60%;
     }
 }
