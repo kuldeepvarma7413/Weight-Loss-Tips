@@ -18,12 +18,14 @@ a{
 }
 
 header{
-    background: #566c2b;
+    background: #0d774d;
     display: flex;
     align-items: center;
     padding: 15px 0px;
     position: fixed;
+    height: 80px;
     width: 100%;
+    box-shadow: 1px 1px 15px #0d774d;
 }
 header a{
     color: white;
@@ -47,18 +49,23 @@ header ul li a{
 #logo:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.insta:hover{
+    color: rgb(255, 0, 85);
+}
+.twitter:hover{
+    color: rgb(49, 188, 247);
+}
 
 .welcome:hover{
-    color: darkorange;
+    color: rgb(0, 0, 0);
 }
 header nav ul li a:hover{
     color: rgb(17, 28, 238);
     background-color: white;
-    border-radius: 8px;
 }
 
 aside ul li a:hover{
-    color: red;
+    color: rgb(43, 195, 245);
 }
 
 #logo:hover{
@@ -66,9 +73,6 @@ aside ul li a:hover{
     font-size: 35px;
 }
 
-#menu li{
-    padding: 10px;
-}
 
 #social-links{
     padding: 10px;
@@ -91,7 +95,7 @@ aside ul li a:hover{
 }
 
 .welcome{
-    color: rgb(80, 113, 46);
+    color: #0d774d;
     font-size:35px;
 }
 .service-box img{
@@ -140,7 +144,7 @@ aside ul li a:hover{
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px #ee5253;
+    box-shadow: 1px 1px 20px #0d774d;
 }
 
 .bmih2{
@@ -183,7 +187,7 @@ aside ul li a:hover{
     margin-top: 10px;
     border: none;
     color: #fff;
-    background-image: linear-gradient(120deg,#ff6b6b, #5f27cd);
+    background-image: linear-gradient(120deg,#09f079, #148fe7);
     width: 150px;
     padding: 10px;
     margin: 0px auto;
@@ -193,7 +197,7 @@ aside ul li a:hover{
 }
 
 #btn:hover{
-    box-shadow: 1px 1px 1px #341f97;
+    box-shadow: 1px 1px 1px #00ccff;
 }
 
 #info{
@@ -203,12 +207,12 @@ aside ul li a:hover{
 
 #main{
     display: flex;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 aside{
     flex: 0 0 20vw;
-    background: beige;
+    background: rgb(199, 236, 219);
     padding: 10px;
 }
 
@@ -218,7 +222,7 @@ aside ul{
 }
 
 aside ul a{
-    color: #566c2b;
+    color: #0d774d;
     padding: 10px;
     display: block;
     border-bottom: 1px solid gray;
@@ -242,15 +246,19 @@ table{
 }
 
 footer{
-    background: #566c2b;
     color: white;
     text-align: center;
     padding: 15px;
 }
 
+footer a:hover{
+    color: rgb(17, 28, 238);
+    background-color: white;
+    border-radius: 5px;
+}
 
 .header{
-    background: #566c2b;
+    background: #0d774d;
     display: flex;
     align-items: center;
     padding: 15px 0px;
@@ -271,6 +279,7 @@ footer nav ul{
 footer{
     font-family: 'cardo';
     align-items: top;
+    height: 250px;
 }
 
 footer ul li{
@@ -289,14 +298,67 @@ footer div h3{
 footer p{
     font-size: 10px;
 }
+.footer-mid p{
+    font-size: 14px;
+}
+.footer-mid a{
+    padding: 5px 10px;
+    border: 1px solid #0d774d;
+}
+.footer-mid a:hover{
+    color: white;
+    background-color: #0d774d;
+    border-color: white;
+}
+.footer-mid input{
+    padding: 5px 20px;
+    background-color: #0d774d;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.footer-mid input:hover{
+    color: #0d774d;
+    background-color: white;
+}
 img{
     border-radius: 5px;
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 img:hover{
-    box-shadow: 2px 2px 3px 5px #9dbd73;
+    box-shadow: 2px 2px 20px #0d774d;
+    
 }
+.facebook{
+    padding: 31.5px 20px;
+}
+.twitter{
+    padding: 31.5px 20px;
+}
+.insta{
+    padding: 31.5px 20px;
+}
+.home{
+    padding: 31.5px 30px;
+}
+.about-us{
+    padding: 31.5px 20px;
+}
+.contact-us{
+    padding: 31.5px 15px;
+}
+.facebook1:hover{
+    color: ;
+}
+.twitter1:hover{
+    color: rgb(49, 188, 247);
+}
+.insta1:hover{
+    color: rgb(255, 0, 85);
+}
+
+
 /*responsive*/
 @media screen and (max-width:850px){
     aside{
